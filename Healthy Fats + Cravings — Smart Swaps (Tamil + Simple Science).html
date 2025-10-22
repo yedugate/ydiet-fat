@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthy Fats + Cravings — Smart Swaps (Tamil + Simple Science)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;      /* deep ink */
+      --card:#0f1830;    /* indigo card */
+      --text:#e9eef8;    /* near-white */
+      --muted:#b6c3de;   /* soft slate */
+      --accent:#61d095;  /* mint */
+      --accent-2:#ffd166;/* warm */
+      --danger:#ff6b6b;  /* coral */
+      --ok:#79d2ff;      /* sky */
+      --print-text:#111;
+      --maxw:1024px;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; padding:0; background:linear-gradient(180deg, #0b1220 0%, #0b0f1b 100%);
+      color:var(--text);
+      font-family:'Inter','Noto Sans Tamil',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.7;
+    }
+    header{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(10px);
+      background:rgba(11,18,32,0.8);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:18px 20px}
+    .title{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
+    .title h1{margin:0; font-weight:800; letter-spacing:0.2px; font-size:clamp(22px,3vw,32px)}
+    .pill{padding:6px 10px; border-radius:999px; background:rgba(97,208,149,0.15); color:#c4ffe1; border:1px solid rgba(97,208,149,0.35); font-size:12px}
+    nav{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    nav a{color:var(--muted); text-decoration:none; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.08)}
+    nav a:hover{color:var(--text); border-color:rgba(255,255,255,0.25)}
+
+    main{max-width:var(--maxw); margin:18px auto 80px; padding:0 20px;}
+    section{background:var(--card); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius); padding:22px 22px; margin:16px 0}
+    h2{margin:0 0 12px; font-size:clamp(18px,2.6vw,26px)}
+    h3{margin:18px 0 10px; font-size:clamp(16px,2.2vw,22px)}
+    p,li{color:#dbe6ff}
+    ul{padding-left:18px}
+    .grid{display:grid; gap:16px}
+    @media (min-width: 900px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+
+    .callout{
+      border-left:4px solid var(--accent);
+      background:rgba(97,208,149,0.08);
+      padding:12px 14px; border-radius:10px; color:#dff8ea;
+    }
+    .badge{display:inline-block; padding:4px 8px; font-size:12px; border-radius:999px; border:1px solid rgba(255,255,255,0.1); color:var(--muted); margin-right:6px}
+    .legend .badge{border-color:rgba(97,208,149,0.35); color:#c5ffe3}
+
+    .btns{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{background:linear-gradient(180deg,#61d095,#38c083); color:#082216; font-weight:700; padding:10px 14px; border:none; border-radius:12px; cursor:pointer}
+    .btn.alt{background:#1e2b4b; color:#d7e4ff; border:1px solid rgba(255,255,255,0.08)}
+
+    /* Table */
+    .table-wrap{overflow:auto; border-radius:14px; border:1px solid rgba(255,255,255,0.08)}
+    table{width:100%; border-collapse:separate; border-spacing:0; min-width:900px;}
+    thead th{position:sticky; top:0; background:#152046; color:#f0f5ff; text-align:left; font-weight:700}
+    th, td{padding:12px 12px; border-bottom:1px solid rgba(255,255,255,0.06); vertical-align:top}
+    tbody tr:nth-child(odd){background:rgba(255,255,255,0.02)}
+    code{background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:6px}
+
+    footer{max-width:var(--maxw); margin:24px auto 120px; color:var(--muted); padding:0 20px}
+
+    /* Print */
+    @media print{
+      body{background:#fff; color:var(--print-text);}
+      header{position:static; background:#fff; border:none}
+      nav, .btns{display:none}
+      section{background:#fff; border:1px solid #ddd; page-break-inside:avoid}
+      thead th{background:#f0f0f0; color:#111}
+      .callout{background:#f7fff9; border-left-color:#1f8f5f; color:#0a3a2a}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="title">
+        <h1>Healthy Fats + Cravings — <span style="color:var(--accent)">Smart Swaps</span></h1>
+        <span class="pill">Tamil • Simple Science</span>
+      </div>
+      <nav aria-label="Quick links">
+        <a href="#hf101">Healthy fats 101</a>
+        <a href="#lipos">Cholesterol & Lipoproteins</a>
+        <a href="#sensory">Why fried tastes great</a>
+        <a href="#craving">What is a craving?</a>
+        <a href="#divert">Fast playbook</a>
+        <a href="#oils">Choosing oils (TN)</a>
+        <a href="#table">Craving → Smart Swaps</a>
+        <a href="#how">How to use</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hf101">
+      <h2>Healthy fats — quick 101</h2>
+      <div class="grid cols-2">
+        <div>
+          <ul>
+            <li><strong>Fats = 9 kcal/g</strong>; carry <strong>vitamins A, D, E, K</strong>, build hormones, protect organs.</li>
+            <li><strong>Types:</strong> <br>
+              <strong>SFA</strong> (coconut, ghee—heat-stable; use modestly), 
+              <strong>MUFA</strong> (groundnut, sesame, olive—heart-friendly), 
+              <strong>PUFA</strong> (omega-3/6; flax/til/sunflower; avoid overheating), 
+              <strong>Trans-fat</strong> (repeatedly heated/refined—<strong>avoid</strong>).
+            </li>
+            <li><em>“oil-illā food taste illa”</em> feels true because fat gives <strong>creaminess, crispness, aroma carry</strong>, and makes spices bloom.</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <strong>Smart note:</strong> Taste ≠ deep-fry only. You can get crunch & aroma with <em>air-fry / pan-roast / bake</em> + <em>brush-oil</em>, spice roasting, and 
+          <em>curd–nut pastes</em> for creaminess.
+        </div>
+      </div>
+    </section>
+
+    <section id="lipos">
+      <h2>Cholesterol & lipoproteins (what’s what)</h2>
+      <ul>
+        <li><strong>Chylomicrons:</strong> carry dietary fat from gut → body (after meals).</li>
+        <li><strong>VLDL:</strong> liver’s “fat export” (triglyceride-rich).</li>
+        <li><strong>IDL:</strong> VLDL mid-state remnant.</li>
+        <li><strong>LDL (“bad”):</strong> delivers cholesterol to tissues; high levels raise risk.</li>
+        <li><strong>HDL (“good”):</strong> brings cholesterol back to liver (cleanup).</li>
+        <li><strong>Lipoprotein(a):</strong> genetic particle; higher risk if elevated.</li>
+      </ul>
+      <p class="callout"><strong>Lab primer:</strong> Routine panel: <em>TC, LDL-C, HDL-C, TG, non-HDL-C</em>. This page is educational; for personal targets, meet your clinician.</p>
+    </section>
+
+    <section id="sensory">
+      <h2>Why fried foods are so loveable (sensory science)</h2>
+      <ul>
+        <li><strong>Crunch + contrast:</strong> hot-dry crust vs soft inside = brain “reward.”</li>
+        <li><strong>Aroma rockets:</strong> high heat makes Maillard/browning aromas; fat <strong>dissolves & delivers</strong> spice aromas to your nose.</li>
+        <li><strong>Mouthfeel:</strong> fat = <strong>lubrication/creaminess</strong>, slows flavor fade, increases “more bite please” loop.</li>
+        <li><strong>Sound:</strong> the crunch sound itself boosts pleasure!</li>
+        <li><strong>Salt + fat + sugar</strong> together = strong dopamine imprint → craving memory.</li>
+      </ul>
+    </section>
+
+    <section id="craving">
+      <h2>What is a craving? (and why kids get it often)</h2>
+      <p><strong>Craving = a taught brain-loop</strong> (cue → want → seek → bite → relief → memory).</p>
+      <p><strong>Triggers:</strong> lack of sleep, stress, screens/ads, peer cues, hunger gaps, boredom, bright packs, sweet-salt-fat combos.</p>
+      <p><strong>Kids seek:</strong> crunch, sweet, salty, novelty, finger-food, cold/creamy, logos/rewards, big portion, quick energy.</p>
+    </section>
+
+    <section id="divert">
+      <h2>Diverting kids from “over-craving” (fast playbook)</h2>
+      <ol>
+        <li><strong>Pause ritual (90 sec):</strong> sip water + 3 slow breaths.</li>
+        <li><strong>FAODC line (Tamil):</strong> <em>“இப்போ பசி-விருப்பு இரண்டும் இருக்கு. 2 நிமிடம் ரெடி பண்ணுறேன்—முதல் நீர், அப்புறம் 2-பார்ட் ஸ்நாக்.”</em></li>
+        <li><strong>2-Part snack architecture:</strong> <em>carb + protein/fat</em> (e.g., banana + peanuts; dates + curd).</li>
+        <li><strong>Volume-first:</strong> veg sticks/soup first → <span class="badge">↓GL</span>.</li>
+        <li><strong>Portionize:</strong> mini bowls; <em>one-plate rule</em> at parties.</li>
+        <li><strong>Environment:</strong> fruit bowl at eye-level; chips not visible.</li>
+        <li><strong>Timing:</strong> fix <strong>after-school window</strong> + <strong>Early-Light Dinner (ELD)</strong>.</li>
+        <li><strong>Swap ladder (1→2→3):</strong> junk → better packet → home-made whole-food.</li>
+      </ol>
+    </section>
+
+    <section id="oils">
+      <h2>Choosing oils (India/TN practical)</h2>
+      <ul>
+        <li><strong>Daily home use:</strong> rotate <strong>groundnut / gingelly (sesame) / mustard</strong>; add a little <strong>coconut/ghee</strong> for flavor (portion-wise).</li>
+        <li><strong>High heat / deep-fry (rare):</strong> use fresh oil, single session, <strong>don’t reuse</strong> repeatedly; prefer stable oils (groundnut/coconut).</li>
+        <li><strong>Temper/finishing:</strong> gingelly, mustard; keep flame moderate.</li>
+        <li><strong>Keep total oil modest</strong>; shift crispness via <em>air-fry/bake/pan-roast</em> + “brush-oil” instead of deep-fry.</li>
+      </ul>
+    </section>
+
+    <section id="table">
+      <div class="legend" style="margin-bottom:10px">
+        <span class="badge">↓GL</span>
+        <span class="badge">↑Fiber</span>
+        <span class="badge">↑Protein</span>
+        <span class="badge">↑Microbiome</span>
+        <span class="badge">↘NCDP</span>
+        <span class="badge">Chrono</span>
+      </div>
+      <h2>Craving pain-points → Smart-Swap methods (Tamil-friendly)</h2>
+      <div class="table-wrap" role="region" aria-label="Craving to Smart Swap table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:40px">#</th>
+              <th>Craving Issue</th>
+              <th>Top Triggers (Cue)</th>
+              <th>Kid Seeks (Sensory)</th>
+              <th>Smart-Swap Technique</th>
+              <th>Quick Example Swap (TN)</th>
+              <th>Shield Script (Tamil)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Chips/kurkure</td><td>TV, peer share</td><td>Loud crunch, salt</td><td><strong>Sensory-match + 2-Part Snack</strong> <span class="badge">↓GL</span> <span class="badge">↑Fiber</span></td><td><strong>Roasted chana + lemon</strong> or <strong>millet murukku (air-fried)</strong></td><td>“ஒரு கிண்ணம் சுண்டல் முதல்; அப்புறம் 5 பீஸ்களுக்கு லிமிட்.”</td></tr>
+            <tr><td>2</td><td>Fries/pakoda</td><td>Evening hunger</td><td>Hot-crisp</td><td><strong>Heat-taming + Portionize</strong></td><td><strong>Air-fried wedges</strong> + hung-curd mint dip</td><td>“சாஸுக்கு யோகர்ட் டிப் மட்டும்—ஒரே கிண்ணம்.”</td></tr>
+            <tr><td>3</td><td>Instant noodles</td><td>Ads, hurry</td><td>Slurp + masala</td><td><strong>Protein anchor + Veg bulk</strong></td><td><strong>Veg-egg sevai/whole-wheat sevai</strong> with double veggies</td><td>“முதல் சூப், அப்புறம் ஒரு ப்ளேட் மட்டுமே.”</td></tr>
+            <tr><td>4</td><td>Pizza/burger</td><td>Party</td><td>Cheese pull</td><td><strong>Plate geometry + Half-veg rule</strong></td><td><strong>Thin-crust roti-pizza</strong> (paneer/veg) + salad first</td><td>“முதலில் சாலட் அரை தட்டு—பிறகு 1 ஸ்லைஸ்.”</td></tr>
+            <tr><td>5</td><td>Cream biscuits</td><td>Study break</td><td>Sweet-sandwich</td><td><strong>Dessert-timing + Pairing</strong></td><td><strong>Dates + peanuts</strong> / <strong>banana + peanut sachet</strong></td><td>“இது படிக்கிறப்புறம்—பழம் + 10 பட்டாணி.”</td></tr>
+            <tr><td>6</td><td>Chocolate bar</td><td>Stress</td><td>Melt-creamy</td><td><strong>Portion tabs + Pair protein</strong></td><td><strong>2 small squares</strong> with <strong>milk/curd</strong></td><td>“2 சதுரம் தான்; பால் சேர்த்து.”</td></tr>
+            <tr><td>7</td><td>Ice-cream</td><td>Heat, reward</td><td>Cold-creamy</td><td><strong>Sweetness recalibration</strong></td><td><strong>Frozen yogurt + fruit</strong> / <strong>kulfi mini</strong></td><td>“கம்மி ஸ்கூப்; பழம் மேல.”</td></tr>
+            <tr><td>8</td><td>Sugary soda</td><td>Peer, outings</td><td>Sweet fizz</td><td><strong>Beverage swap</strong></td><td><strong>Nimbu pani/chaas/herb tea</strong></td><td>“வாட்டர்-பர்ஸ்ட்; சோடா வேண்டாம், லெமன் நீர்.”</td></tr>
+            <tr><td>9</td><td>Sweetened tea/coffee</td><td>Habit</td><td>Sweet-kick</td><td><strong>Sweet step-down</strong></td><td><strong>Half sugar → jaggery pinch → no-sugar with nuts</strong></td><td>“இன்று அரை; நாளை குவார்டர்.”</td></tr>
+            <tr><td>10</td><td>Bakery puffs</td><td>Bus stop</td><td>Flaky-salt</td><td><strong>Protein anchor + Limit</strong></td><td><strong>Veg-paneer roll (home)</strong>; <strong>1 piece max</strong></td><td>“ஒன்று போதும்; மேல யோகர்ட் டிப்.”</td></tr>
+            <tr><td>11</td><td>Parotta craving</td><td>Late night</td><td>Chewy-fatty</td><td><strong>Chrono + Fiber-first</strong> <span class="badge">Chrono</span></td><td><strong>Chapati + veg kurma</strong>; ELD soup if late</td><td>“இரவு லைட்—சூப் + குருமா மட்டும்.”</td></tr>
+            <tr><td>12</td><td>Spicy chips</td><td>Boredom</td><td>Burn-crunch</td><td><strong>Spice synergy + Nuts</strong></td><td><strong>Masala peanuts/roasted chana</strong></td><td>“மசாலா சுண்டல் 1 கப்—சிப்ஸ் இல்லை.”</td></tr>
+            <tr><td>13</td><td>Sugar rush (sweets)</td><td>Festivals</td><td>Syrup-soft</td><td><strong>Dessert after meal + Cut pieces</strong></td><td><strong>Mysurpa 2 small</strong> after full meal; <strong>fruit first</strong></td><td>“ஒரே தட்டு விதி; உணவுக்குப் பிறகு மட்டும்.”</td></tr>
+            <tr><td>14</td><td>Street chaat</td><td>Smell cue</td><td>Tangy-crunch</td><td><strong>Volume-load + Hygiene</strong></td><td><strong>Boiled chana chaat @ home</strong> (lemon, onion)</td><td>“முதலில் நீர், பிறகு வீட்டுச் சாட்.”</td></tr>
+            <tr><td>15</td><td>Late-night munch</td><td>OTT</td><td>Hand-to-mouth</td><td><strong>ELD + Close kitchen</strong> <span class="badge">Chrono</span></td><td><strong>Buttermilk + cucumber sticks</strong></td><td>“9:00க்கு கிச்சன் close—இன்று மட்டுமே.”</td></tr>
+            <tr><td>16</td><td>After-school crash</td><td>Long gap</td><td>Fast energy</td><td><strong>2-Part snack</strong></td><td><strong>Banana + peanuts / curd + puffed rice</strong></td><td>“வரவுடன் நீர்; உடனே 2-பார்ட் ஸ்நாக்.”</td></tr>
+            <tr><td>17</td><td>Creamy gravies</td><td>Hotel feel</td><td>Rich mouthfeel</td><td><strong>Fat-quality upgrade</strong></td><td><strong>Curd-nut paste</strong> instead of cream; <strong>sesame/peanut paste</strong></td><td>“க்ரீம் இல்லை—தயிர் பேஸ்ட் தான்.”</td></tr>
+            <tr><td>18</td><td>Soft drinks + chips combo</td><td>Peer packs</td><td>Salt-sweet loop</td><td><strong>Bundle break</strong></td><td><strong>Water + roasted nuts</strong>; <strong>no dual-combo</strong></td><td>“டபுள் காம்போ வேண்டாம்.”</td></tr>
+            <tr><td>19</td><td>Breakfast skip → pastry</td><td>Rush</td><td>Sweet-quick</td><td><strong>Prep-ahead + Grab-cup</strong></td><td><strong>Fruit + nut cup</strong>; <strong>millet porridge to-go</strong></td><td>“வாசல் பக்கத்துல க்ராப் கப் ரெடி.”</td></tr>
+            <tr><td>20</td><td>Exam stress nibbling</td><td>Anxiety</td><td>Repeat bites</td><td><strong>Timer + Chew swap</strong></td><td><strong>Fennel/peppermint + warm water</strong>; nuts portion</td><td>“25-நிமிட டைமர்; இடைவேளையில் 10 பட்டாணி.”</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>How to use Smart-Swap techniques (step-by-step)</h2>
+      <ol>
+        <li><strong>Name the craving</strong> (what/when/where).</li>
+        <li><strong>Pick one technique</strong> (e.g., 2-Part snack or Fiber-first).</li>
+        <li><strong>Prepare the swap before</strong> the usual cue (after-school box; party one-plate rule).</li>
+        <li><strong>Track 3 dials (0–10):</strong> Focus · Satiety · Lightness for 7 days.</li>
+        <li><strong>Ladder upgrades</strong> every week (packet → air-fried → whole-food).</li>
+      </ol>
+      <div class="btns">
+        <button class="btn" onclick="window.print()">🖨️ Print (A4)</button>
+        <button class="btn alt" onclick="scrollTo(0,0)">⬆️ Back to top</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Tags you can apply:</strong> ↓GL · ↑Fiber · ↑Protein · ↑Microbiome · ↘NCDP (processing damage) · Chrono.</p>
+    <p>Education only. Not medical advice. For personal lipid/LDL/HDL targets and conditions, consult your clinician.</p>
+  </footer>
+</body>
+</html>
+
